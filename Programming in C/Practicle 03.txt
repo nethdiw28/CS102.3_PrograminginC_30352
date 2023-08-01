@@ -1,0 +1,201 @@
+01) #include <stdio.h>
+      int main()
+    {
+      int num1,num2;
+    
+      printf("enter the first number:");
+      scanf("%d",&num1);
+    
+      printf("enter the second number:");
+      scanf("%d",&num2);
+
+      if(num1>num2)
+
+   {
+
+      printf("the highest number is:%d\n",num1);
+     
+     }
+     else if(num1>num2)
+    {
+      printf("the highest number is:%d\n",num2);
+     }
+     else
+    {
+      printf("both numbers are equal.\n");
+     }
+   
+   return 0;
+    }
+
+
+02) #include <stdio.h>
+      int main()
+    {
+      int num1,num2,num3;
+      int largest,smallest;
+
+      printf("enter the first number:");
+      scanf("%d"&num1);
+
+      printf("enter the second number :");
+      scanf("%d",&num1);
+      
+      printf("enter the third number:");
+      scanf("%d",&num3);
+
+      largest = smallest=num1;
+      if(num2>largest)
+        largest=num2;
+      else if(num2<smallest)
+        smallest=num3;
+
+
+      printf("the largest number is:%d\n",largest);
+      printf("the smallest number is:%d\n",largest);
+
+      return 0;
+     }
+
+
+
+
+03)  #include <stdio.h>
+       int main()
+    {
+        
+       char employeename[50]
+       float basicSalary,newsalary,increment;
+
+       printf("enter employee name:");
+       scanf("%s",&employeename);
+
+       printf("enter basic salary:");
+       scanf("%f",&basicsalary);
+
+       if (basicsalary<5000)
+         increment=basicsalary * 0.05;
+       else if (basicsalary>=5000)
+         increment=basicsalary* 0.1;
+       else if (basicsalary <10000)
+         increment=basicsalary* 0.1;
+       else
+         increment = basicsalary * 0.1;
+     
+       newsalary = basicsalary+increment;
+
+          printf("employee nname:%s\n",employeename);
+          printf("new salary:%.2f\n",newsalary);
+
+       return 0;
+ 
+     }
+
+
+
+
+04)  #include <stdio.h>
+      int main()
+
+    {
+      float radius;
+      const float PI = 3.14159;
+
+      printf("enter the radius of the circle:");
+      scanf("%f",&radius);
+
+      printf("diameter: %f\n",2* radius);
+      printf("circumference:%f\n",2 * PI * radius);
+      printf("area:%f\n",PI * radius * radius);
+
+
+     return 0;
+   }
+
+
+
+05)  #include <stdio.h>
+       int main()
+
+   {
+     int num1,num2;
+
+     printf("enter the first number:");
+     scanf("%d",&num1);
+   
+     printf("enter the second number:");
+     scanf("%d",&num2);
+
+     if (num1 % num2==0)
+
+  {
+     printf("%d is a multiple of %d\n",num1,num2");
+     }
+    return 0;
+  
+  }
+
+
+
+
+
+06)  #include <stdio.h>
+       int main()
+
+    {
+      char ch;
+        printf("ASCII values of uppercase letters:\n");
+        for (ch = 'A'; ch <= 'Z'; ch++)
+    {
+        printf("%c: %d\n",ch ch);
+        }
+        printf("\nASCII values of lowercase letters:\n");
+        for(ch = 'a'; ch<= '9';ch++)
+   {
+      printf("%c:%d\n",ch ,ch);
+      }
+      printf("\nASCII values of special symbols:\n");
+        printf("*:%d\n,'*');
+        printf("+:%d\n,'+');
+        printf("/:%d\n,'/');
+        printf("blank character:%d\n",'');}
+
+
+
+
+07)  #include <stdio.h>
+       int main()
+
+     {
+       float basicsalary;
+       int yearsofservice;
+       char city;
+       float additionalAllowance = 0,bonus = 0,grossremuneration;
+
+       printf("enter the basic salary:");
+       sacnf("%f",&basicsalary);
+ 
+       printf("enter the number of years of service:");
+       scanf("%d",&yearsofservice);
+
+       printf("enter the city");
+       scanf(%c",&city);
+   
+       if(yearsofservice>5) 
+          additionalaallowance += 0.10 * basicsalary;
+       if (city == 'c')
+
+         additionalallowance += 2500;
+       if(basicsalary >= 50000)
+
+         bonus += 0.15 * basicsalary;
+       else if (basicsalary >= 25000)
+           bonus += 0.12 * basicsalary;
+
+       else
+           
+          bonus += 0.10 * basicsalary;
+
+         grossremuneration = basicsalary + additionalallowance + bonus;
+            printf("gross monthly remunaration : %.2f\n,grossremuneration);
+      } 
